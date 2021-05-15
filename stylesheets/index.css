@@ -1,0 +1,187 @@
+/* colors
+pink #ed7464
+light blue #9bd8db
+dark blue #125393
+light green #1b9b9d */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Rock Salt', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    background-image: url(../img/koh-tao-boat.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header-title {
+    color: rgba(255, 255, 255, 0.9);
+    background-image: linear-gradient(#125293b4, rgba(255, 255, 255, 0));
+    margin: auto;
+    padding: 5px 75px;
+    border-radius: 3px;
+    text-align: center;
+    transition: ease-in 1s;
+}
+
+.header-title:hover {
+    background-color: #125393;
+    color: white;
+    transition: ease-in 1s;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto 0 0 0;;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 12px 10px;
+    margin-top: 2px;
+    border-radius: 4px;
+    width: 110px;
+    color: #ed7464;
+    transition: ease-in 0.5s;
+    text-align: center;
+}
+
+nav a:hover {
+    background: #ed7464b8;
+    color: white;
+    transition: ease-in 0.5s;
+}
+
+.navbar a.active {
+    color: black;
+    background-color: #ed746470;
+}
+
+.navbar a.icon {
+    background-color:white;
+    display: none;
+    color:#ed7464;
+    text-align: end;
+    padding-right: 50px;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+    "main-content"
+    "sidebar" ;
+    margin: 10px 50px;
+}  
+
+.main-content {
+    grid-area: main-content;
+    padding-right: 20px;
+}
+
+.main-content-image{
+    display: block;
+    margin: 20px auto;
+    width: 80%;    
+}
+
+.aside-content {
+    margin-top: 20px;
+    grid-area: sidebar;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+footer {
+    background-color: #125393;
+}
+
+footer a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    padding: 5px 10px;
+    margin: 5px auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-sticky-top {
+    background-color: white;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.aside-content ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+ul ul li {
+    font-weight: 500;
+}
+
+.aside-content li {
+    padding-top: 5px;
+    margin-top: 1.1em;
+}
+
+@media (max-width: 730px) {
+    .main-container { 
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        padding-right: 0;
+    }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        display: inline-block;
+    }
+    .navbar a {
+        text-align: start;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }    
+    .navbar.responsive a {
+        display: block;
+    }
+    .coll-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header-title {
+        margin-top: 0;
+        /* width: 100%; */
+    }
+    .main-content-image {
+        width: 100%;
+        margin-top: 50px;
+    }
+}

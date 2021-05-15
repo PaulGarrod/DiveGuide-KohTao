@@ -1,0 +1,38 @@
+.briefing-main-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "main-content"
+    "sidebar" ;
+    margin: 10px 50px;
+}  
+
+.briefing-main-content {
+    grid-area: main-content;
+    padding-right: 20px;
+}
+
+.briefing-aside-content {
+    margin-top: 20px;
+    grid-area: sidebar;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.header-p {
+    font-family: 'Rock Salt', cursive;
+}
+
+li {
+    margin-top: 1.1em;
+}
+
+@media (max-width: 730px) {
+    .briefing-main-container { 
+        display: flex;
+        flex-direction: column;
+    }
+    .briefing-main-content {
+        padding-right: 0;
+    }
+}
