@@ -91,7 +91,7 @@ nav a:hover {
 
 .main-content {
     grid-area: main-content;
-    padding-right: 20px;
+    margin: 10%;
 }
 
 .main-content-image{

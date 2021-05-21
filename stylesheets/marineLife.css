@@ -1,10 +1,7 @@
 .marinelife-main-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "main-content"
-    "sidebar" ;
-    margin: 10px 50px;
+    margin: 10px auto;
+    width: 80%;
+    align-content: center;
 }  
 
 .marinelife-main-content {
@@ -13,11 +10,25 @@
     flex-direction: column;
 }
 
-.marinelife-aside-content {
-    margin-top: 20px;
-    grid-area: sidebar;
-    grid-column: 2;
-    grid-row: 1;
+.marinelife-main-images {
+    display: flex;
+}
+
+.marinelife-main-images img {
+    object-fit: cover;
+    padding: 5px;
+    flex-basis: auto;
+    flex-grow: 1;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+table {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    overflow: scroll;
 }
 
 tbody tr:nth-child(odd) {
@@ -26,6 +37,23 @@ tbody tr:nth-child(odd) {
   
 tbody tr:nth-child(even) {
     background-color: #9bd8db7e;
+}
+
+tbody th, thead th:nth-child(1) {
+    min-width: 140px;
+    position: sticky;
+    left: 0;
+    background-color: #9bd8db;
+    padding: 5px 15px;
+}
+
+thead th:nth-child(1) {
+    background-color: white;
+}
+
+tbody td {
+    min-width: 45px;
+    padding: 5px;
 }
 
 caption {
@@ -45,3 +73,4 @@ td {
         padding-right: 0;
     }
 };
+
