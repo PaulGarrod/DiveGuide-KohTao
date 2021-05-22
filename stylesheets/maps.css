@@ -3,26 +3,29 @@
     margin: auto;
 }
 
-.maps-main-content {
+.outer-container {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 50% 25%;
 }
 
-.maps-main-left {
+#maps-main-info1 #maps-main-info2 #maps-main-info3 {
     grid-column: 1;
     background-color: goldenrod;
 }
 
-.maps-main-right {
+#maps-main-map1 #maps-main-map2 #maps-main-map3 {
     grid-column: 2;
     background-color: aquamarine;
 }
 
-.mapImage {
-    width: 100%;
+#maps-main-data1 #maps-main-data2 #maps-main-data3 {
+    grid-column: 3;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-#maps-nav {
-    display: flex;
-    justify-content: space-around;
+.mapImage {
+    width: 100%;
 }
