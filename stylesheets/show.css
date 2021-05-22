@@ -1,0 +1,23 @@
+#show-main-container {
+    width: 80%;
+    margin: auto;
+}
+
+#show-main-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#show-main-left {
+    grid-column: 1;
+    background-color: goldenrod;
+}
+
+#show-main-right {
+    grid-column: 2;
+    background-color: aquamarine;
+}
+
+.showImage {
+    width: 100%;
+}
