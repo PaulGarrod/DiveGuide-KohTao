@@ -42,13 +42,17 @@ mapData.forEach(
         const outerContainer = document.createElement("DIV");
         parentContainer.appendChild(outerContainer).setAttribute("class", "outer-container");
         outerContainer.appendChild(document.createElement("DIV")).setAttribute("id", `maps-main-info${i.id}`);
-
+        document.querySelector(`#maps-main-info${i.id}`).appendChild(document.createElement("H3")).innerText = `${i.name}`;
+        //forEah fish and cool stuff
+        //depth
+        //rating
 
         outerContainer.appendChild(document.createElement("DIV")).setAttribute("id", `maps-main-map${i.id}`);
         document.querySelector(`#maps-main-map${i.id}`).appendChild(document.createElement("IMG")).setAttribute("class", "mapImage");
+        //img src
 
         outerContainer.appendChild(document.createElement("DIV")).setAttribute("id", `maps-main-data${i.id}`);
-        
+        //maps name
     }
 
 )
