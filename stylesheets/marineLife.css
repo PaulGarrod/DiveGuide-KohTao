@@ -26,9 +26,10 @@
 
 table {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 tbody tr:nth-child(odd) {

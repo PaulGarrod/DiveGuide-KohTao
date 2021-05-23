@@ -124,14 +124,19 @@ mapData.forEach(
             i => {
                 thisContainer.appendChild(document.createElement("LI")).innerText = i;
             }
-        )
+        );
         thisContainer.appendChild(document.createElement("H4")).innerText ="Cool Stuff to See!";
         thisContainer.appendChild(document.createElement("UL"));
         i.highlights.forEach(
             i => {
                 thisContainer.appendChild(document.createElement("LI")).innerText = i;
             }
-        )
+        );
+        const homeLink = thisContainer.appendChild(document.createElement("A"))
+        homeLink.innerText ="Back to the Top!";
+        homeLink.setAttribute("href", "#maps-main-container")
+        homeLink.setAttribute("class", "home-link")
+
         const mapContainer = outerContainer.appendChild(document.createElement("DIV"))
         mapContainer.setAttribute("id", `maps-main-map${i.id}`);
         mapContainer.setAttribute("class", "map-map");

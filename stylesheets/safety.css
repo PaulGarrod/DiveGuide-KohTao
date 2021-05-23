@@ -9,6 +9,7 @@
 
 .safety-main-content {
     grid-area: main-content;
+    margin: 10%;
 }
 
 .safety-aside-content {

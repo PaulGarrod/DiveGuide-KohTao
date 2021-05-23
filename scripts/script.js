@@ -7,7 +7,6 @@ function navStickyTop() {
     navbar.classList.remove("nav-sticky-top");
   }
 
-
 function navCollapse() {
   let navbar = document.getElementById("navbar");
   navbar.className === "navbar" || navbar.className === "navbar nav-sticky-top" ? navbar.classList.add("responsive") : navbar.classList.remove("responsive");

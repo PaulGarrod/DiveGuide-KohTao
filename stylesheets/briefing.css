@@ -9,7 +9,7 @@
 
 .briefing-main-content {
     grid-area: main-content;
-    padding-right: 20px;
+    padding: 10%;
 }
 
 .briefing-aside-content {
